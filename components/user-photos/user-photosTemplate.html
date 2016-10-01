@@ -1,0 +1,37 @@
+<md-list >
+<!-- //<div>testing photos {{userphotos}}</div> -->
+  <md-list-item ng-repeat="photo in userphotos | orderBy: '-likeUsers'">
+  		<div class="parent">
+  			<div class="content">
+  				<img class="picture" ng-src="/images/{{photo.file_name}}"/> <br> 
+  				Creation: {{photo.date_time}} <br>
+
+<!-- Like button has like it or not will show a different button  -->
+          <md-button >  
+            <img ng-if="hasLiked(photo)" ng-click="removeLike(photo._id)" ng-src="{{link}}"/> 
+            <img ng-if="!hasLiked(photo)" ng-click="addLike(photo._id)" ng-src="{{link}}"/> 
+                 {{numberofLikes}} 
+          <md-button>
+       
+
+  				 <md-list-item ng-repeat="cmt in photo.comments">	
+  				 	<p> 			
+         				<a href = "#/users/{{cmt.user._id}}"> {{cmt.user.first_name}}: </a>{{cmt.comment}} <br>
+	    			 	Date:  {{cmt.date_time}} <br>
+	    			 </p>	
+            </md-list-item> 
+            <form ng-submit="addComment(photo._id, yourComment)">
+                <label id="username"> {{username}} : </label>
+                <input ng-model="yourComment" placeholder="Write on wall" style="font-style:italic" >
+                <input type="submit" id="submit" value="Add comment" />
+            <!--  <button ng-click="addComment(photo._id, yourComment)"> Add it!  </button> -->
+          </form>
+	    	</div>		 
+	    </div>
+  </md-list-item>
+</md-list>
+
+
+
+
+

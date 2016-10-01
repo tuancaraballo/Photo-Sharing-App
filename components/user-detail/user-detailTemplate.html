@@ -1,0 +1,29 @@
+<div class="parentFirst"> 
+	<div>
+		<p> <span class="tag"> First Name: {{user.first_name}} </span> <br>
+	  		Last Name:  {{user.last_name}} <br>
+	  		Location:   {{user.location}} <br>
+	  		Description: {{user.description }} <br>
+	  		Ocupation:  {{user.occupation}} <br>
+	  	<a href="#/photos/{{user._id}}">  Photo <a/>
+		</p>		
+	</div>
+
+	<div class="parentSecond"> 	  
+		<h1>	Most recent photo <h1>
+		<div>
+			<img ng-click = "mostRecent()" class="picture" ng-src="/images/{{most_recent_FileName}}"/> <br> 
+			 <span id="date" > Date Uploaded: <br>{{most_recent_date}}  </span>
+		</div>
+
+
+		<br><br>
+		<h1> Most comments photo </h1>
+		<div>	
+		
+			<img ng-click = "mostComments()" class="picture" ng-src="/images/{{mostCommentFileName}}"/> <br> 
+	    </div>		
+
+ 	</div>		
+
+<div>

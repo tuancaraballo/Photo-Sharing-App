@@ -1,0 +1,26 @@
+.loginStyle{
+	/*align: middle;*/
+	text-align: center;
+}
+
+.btn1 {
+ 	 font-style: italic;	
+}
+
+input[type="submit"]{
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+background-color: #3F51B5;
+  padding: 6px 6px 6px 6px;
+  margin: 6px 8px 6px 8px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  font-weight: bold;
+  color: white;
+  outline: none;
+
+}

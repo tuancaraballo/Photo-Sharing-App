@@ -1,0 +1,26 @@
+.parentFirst{
+	display: flex;
+	align-content: space-between;
+	flex-wrap: nowrap;
+	align-content: space-between;
+}
+
+.parentSecond{
+	float: right;
+	flex-direction: column;
+}
+.picture{
+   max-width:30%;
+   max-height:30%;
+   padding:2px;
+   border:3px solid #3F51B5;
+   background-color: #FFFFFF;
+   cursor:pointer;
+}
+
+h1 {
+	 font-size: 120%;
+}
+#date{
+	font-size: 80%;
+}

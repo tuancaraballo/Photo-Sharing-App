@@ -1,0 +1,23 @@
+.parent{
+     display: flex;
+     border:3px solid #259B24;
+     margin:3px;
+      width: auto; 
+     height: auto; 
+     
+}
+
+.content{
+     width: auto; 
+     height: auto; 
+     margin:5px;
+     background: #72D572;
+     color: black
+     text-align:center;
+
+}
+
+#username{
+     font-weight: bold;
+     font-style: italic; 
+}

@@ -1,0 +1,22 @@
+
+	<table style="width:100%">
+		<thead>
+		<tr> 
+		  <th class= "headerFont" >User's name</th>
+		  <th class= "headerFont"> Date </th>
+		  <th class= "headerFont"> Activity Type</th>
+		  <th class= "headerFont"> Description </th>
+		  <th class= "headerFont"> Comment's author </th>
+		  <th class= "headerFont"> Photo </th>
+		</tr>
+		<thead>
+		<tr ng-repeat="activity in activityFeed">
+			<th class="rowFont"> {{activity.userName}}  </th>
+			<th class="rowFont"> {{activity.date}}</th>
+			<th class="rowFont"> {{activity.type}}</th>
+			<th class="rowFont"> {{activity.description}}</th>
+			<th class="rowFont">  {{activity.comments_authorName}}  </th>
+			<th ng-if="activity.photoUpload"> <img  class="picture" ng-src="/images/{{activity.photoUpload}}"> </th>				 
+		</tr>
+
+	</table>		

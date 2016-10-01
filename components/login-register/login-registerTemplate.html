@@ -1,0 +1,90 @@
+
+<div>
+	<!-- <section layout="row" layout-sm="column" layout-align="center center" layout-wrap> -->
+<!--   	<h1> Please log in </h1> -->
+   	
+   	<form layout="row" layout-sm="column" layout-align="center center" layout-wrap  ng-submit="login()" >
+    	<label>UserName: &nbsp&nbsp</label>
+    	<input ng-model="loginObject.login_name" placeholder="Enter user id" style="font-style:italic"  required>
+    	<br>
+    	<label>&nbsp&nbsp&nbsp&nbspPassword: &nbsp&nbsp</label>
+  	    <input ng-hide="showpassword" type="password" ng-model="loginObject.password" placeholder="Enter password" style="font-style:italic"  required >
+<!--   	     <input type="submit" id="submit" value="Login" /> -->
+
+  		<!--  <md-button class="md-raised md-primary" ng-click="login()" > -->
+  		 	 <input type="submit" id="submit" value="Login" />
+  		<!--   </md-button> -->
+	</form>
+
+    <h1> Or Maybe Register ? </h1>
+    <form layout="column" layout-sm="row" layout-align="center center" style="font-style:italic" layout-wrap ng-submit="register()()">
+        <md-input-container class="md-block">
+       		<label> Login Name: </label>
+       		<input required name="userName" ng-model="userInfo.login_name" placeholder="Enter login id" style="font-style:italic" required>
+       		<div ng-messages="userName.$error">
+             	<div ng-message="required">This is required.</div>
+            </div>	          
+       	</md-input-container>
+     	
+     	<md-input-container class="md-block">
+       		<label> First Name </label>
+        	<input required name="firstName" ng-model="userInfo.first_name" placeholder="Enter first name" style="font-style:italic" required>
+        	<div ng-messages="firstName.$error">
+             	<div ng-message="required">This is required.</div>
+            </div>	
+        </md-input-container>	
+        <md-input-container class="md-block">
+        	<label> Last Name </label>
+        	<input required name="lastName" ng-model="userInfo.last_name" placeholder="Enter last name" style="font-style:italic" required>
+        	<div ng-messages="lastName.$error">
+             	<div ng-message="required">This is required.</div>
+            </div>	
+        </md-input-container>	
+
+         <md-input-container class="md-block">
+        	 <label> Location </label>
+       		 <input required name="location" ng-model="userInfo.location" placeholder="Enter location" style="font-style:italic" required>
+       		 <div ng-messages="location.$error">
+             	<div ng-message="required">This is required.</div>
+            </div>	
+         </md-input-container>	
+
+         <md-input-container class="md-block">
+         	 <label> Description </label>
+        	<input  required name="description" ng-model="userInfo.description" placeholder="Enter description" style="font-style:italic" required>
+        	 <div ng-messages="description.$error">
+             	<div ng-message="required">This is required.</div>
+            </div>	
+         </md-input-container>	
+
+         <md-input-container class="md-block">
+          	<label> Occupation </label>
+        	<input required name="ocupation" ng-model="userInfo.occupation" placeholder="Enter ocupation " style="font-style:italic"  required>
+        	<div ng-messages="ocupation.$error">
+             	<div ng-message="required">This is required.</div>
+            </div>	
+         </md-input-container>	
+         	
+         <md-input-container class="md-block">
+		 	<label> Password </label>
+        	<input required name="password" ng-hide="showpassword" type="password" ng-model="userInfo.password" placeholder="Enter password" style="font-style:italic" required>
+        	<div ng-messages="password.$error">
+             	<div ng-message="required">This is required.</div>
+            </div>
+         </md-input-container>	
+         	
+         <md-input-container class="md-block">
+			<label> Re-enter password </label>
+    	    <input equired name="repassword" ng-hide="showpassword" type="password" ng-model="temp_password" placeholder="Reenter password" style="font-style:italic"  required>
+    	    <div ng-messages="repassword.$error">
+             	<div ng-message="required">This is required.</div>
+            </div>
+
+         </md-input-container>	 
+          <input type="submit" id="submit" value="Register!" />
+       <!--  <md-button class="md-raised md-accent" ng-click="register()" > -->
+ 				<!-- <input type="submit" id="submit" value="Register!" /> -->
+  <!--       </md-button>   -->  
+   		<!-- <button ng-click="register()"> Register!! </button>	  -->
+   	</form>	   
+ </div>

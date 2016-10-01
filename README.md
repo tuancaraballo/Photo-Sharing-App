@@ -14,5 +14,8 @@ Some of the functionalities include:
 - See user's current activity
 - An Activities feed that allow you to see all users' actions.
 
---> Not the most beautiful design, I was mainly interested in the functionality.
+DISCLAIMER: Not the most beautiful design, I was mainly interested in the functionality. Also, this file is missing he node modules.I didn't upload them here since they are very big and contain a lot of files. . If you would like to run the app, all you need to do is install node in your computer, then on the terminal navigate to the directory where you saved my app and call "npm install" , that will read the dependencies of the package.js file and will install the require modules. Let me know if you need any help.
+
+Thank you, 
+Tuan
 
